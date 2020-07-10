@@ -27,6 +27,9 @@ import {
 } from "react-native/Libraries/NewAppScreen";
 
 declare const global: { HermesInternal: null | {} };
+import Config from "react-native-config";
+
+alert(Config.ENV);
 
 const App = () => {
   return (
