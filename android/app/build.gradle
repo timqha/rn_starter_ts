@@ -81,7 +81,18 @@ project.ext.react = [
     enableHermes: false,  // clean and rebuild if changing
 ]
 
+project.ext.envConfigFiles = [
+    debug: "env/.env.dev",
+    dev: "env/.env.dev",
+    prod: "env/.env.prod",
+    preprod: "env/.env.preprod",
+    stage: "env/.env.stage",
+]
+
 apply from: "../../node_modules/react-native/react.gradle"
+
+
+apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -141,6 +152,22 @@ android {
             enable enableSeparateBuildPerCPUArchitecture
             universalApk false  // If true, also generate a universal APK
             include "armeabi-v7a", "x86", "arm64-v8a", "x86_64"
+        }
+    }
+    // ENVIRONMENT - added productFlavors
+    flavorDimensions "version"
+    productFlavors {
+        dev {
+            dimension "version"
+        }
+        stage {
+            dimension "version"
+        }
+        preprod {
+            dimension "version"
+        }
+        prod {
+            dimension "version"
         }
     }
     signingConfigs {
