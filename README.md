@@ -15,6 +15,8 @@
   ```
 # TODO
 
+- [x] env
+- [ ] splash
 - [ ] Navigation example (with header and auth flow)
 - [ ] Add image component (probably with fast image)
 - [ ] Usage example (probably two or three pages, login -> main page -> profile)
