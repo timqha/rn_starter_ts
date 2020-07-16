@@ -23,8 +23,8 @@
 - [ ] Add i18n
 - [ ] Add MobX
 - [ ] Request module review / refactoring
-- [] Crash report service (Crashlitycs/Firebase, Sentry, Bugsnag e.t.c)
-- [] validate.js???
-- [] Storybook???
+- [ ] Crash report service (Crashlitycs/Firebase, Sentry, Bugsnag e.t.c)
+- [ ] validate.js???
+- [ ] Storybook???
 - [] Cache / Offline mode (local database, TYPEORM, realm, WatermelonDB, https://github.com/quarrant/mobx-persist-store
  etc.)

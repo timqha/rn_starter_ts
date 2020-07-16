@@ -12,14 +12,6 @@ FL_APPFILE_PATH="fastlane/Appfile";
 # IOS FILES
 IOS_PBXPROJ_PATH="ios/rn_starter.xcodeproj/project.pbxproj";
 
-# ANDROID FILES
-
-ANDROID_PROGUARD="android/app/proguard-rules.pro";
-ANDROID_BUCK="android/app/BUCK";
-ANDROID_BUILD_GRADLE="android/app/build.gradle";
-ANDROID_MANIFEST="android/app/src/main/AndroidManifest.xml";
-ANDROID_MAIN_JAVA_PATH="android/app/src/main/java";
-
 # USER INPUTS
 OLD_BUNDLE_ID=$1
 NEW_BUNDLE_ID=$2
